@@ -1,0 +1,1 @@
+import{I as c}from"./index.c5b6faf2.js";function t(e){return c.put({url:`/checkIn/cancel?id=${e.id}&taskId=${e.taskId}`})}function r(e){return c.get({url:"/check-in/pageQuery",params:e})}function u(e){return c.post({url:"/check-in/apply",params:e})}function a(e){return c.get({url:`/check-in/detail/${e}`})}export{u as a,t as b,a as c,r as g};

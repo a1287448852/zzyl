@@ -1,0 +1,517 @@
+:deep(.cleckInForm) {
+    .t-table {
+        .t-input {
+            width: 100%;
+
+            &.t-input--suffix>.t-input__suffix {
+                position: absolute;
+                right: 10px;
+            }
+        }
+    }
+
+
+    .t-card__body {
+        font-size: 12px;
+
+        .checkUpload {
+            font-size: 12px;
+
+            .t-form {
+                display: block;
+            }
+        }
+    }
+
+    .addInput {
+        bottom: 0;
+    }
+
+}
+
+.baseCon .baseL .dialog-form {
+    :deep(&.cleckInForm) {
+        .t-card__body {
+            display: block;
+        }
+    }
+
+    :deep(&.assessmentForm) {
+        .t-form {
+            display: block;
+        }
+
+        .t-card__body {
+            display: block;
+
+            .t-form__item {
+                width: 100%;
+
+                .t-form__controls-content {
+                    display: block;
+
+                    .checkBoxInput {
+                        width: 100%;
+
+                        .t-input__wrap {}
+                    }
+                }
+
+                .t-checkbox-group {
+                    display: flex;
+                }
+
+                .t-checkbox {
+                    width: 220px;
+
+                    &.lastCheck {
+                        width: inherit;
+                    }
+                }
+            }
+
+        }
+
+        .tit {
+            padding-bottom: 12px;
+        }
+
+        .t-form__controls {
+            line-height: 32px;
+        }
+
+        .t-checkbox-group {
+            gap: 0;
+        }
+
+        .t-checkbox__label {
+            line-height: 32px
+        }
+
+        .assessmentBox2 {
+            .t-form__label {
+                display: block;
+                width: 100% !important;
+                text-align: left;
+
+                label {
+                    display: flex;
+                    width: 100% !important;
+
+                    span {
+                        flex: 1;
+                        text-align: right;
+                    }
+                }
+            }
+
+            .t-form__controls {
+                margin-left: 15px !important;
+                display: block;
+
+            }
+
+            .t-radio {
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .t-radio__label {
+                white-space: normal;
+                width: calc(100% - 30px);
+                vertical-align: text-top;
+            }
+        }
+
+        .otherBox {
+            .t-form__controls {
+                .t-form__controls-content {
+                    display: flex;
+                    align-items: baseline;
+
+                    .t-checkbox {
+                        width: 70px;
+                    }
+                }
+            }
+
+
+        }
+
+        .assessmentForm3 {
+            .t-form__item {
+                // margin-bottom: 0px;
+            }
+
+            .tit {
+                display: flex;
+                align-items: center;
+            }
+
+            .targetScore {
+                span {
+                    padding-right: 30px;
+                }
+            }
+        }
+
+    }
+
+}
+
+:deep(.detail-base) {
+    .baseInfoBox {
+        .info-block {
+            display: block;
+
+            .info-item {
+                width: 100%;
+
+                .con {
+                    width: 100%;
+
+                    span {
+                        padding-right: 30px;
+
+                        &.bt-small {
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+
+            h1 {
+                text-align: right;
+            }
+        }
+
+        .bt-small {
+            width: auto;
+
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+
+    .isCheck {
+        .t-radio.t-is-disabled {
+            &.t-is-checked .t-radio__input {
+                border-color: var(--color-main);
+
+                &::after {
+                    background-color: var(--color-main);
+                }
+            }
+
+            .t-radio__label {
+                color: var(--color-bk3)
+            }
+        }
+
+        .t-checkbox.t-is-disabled {
+            .t-checkbox__label {
+                color: var(--color-bk3)
+            }
+
+            .t-checkbox__input {
+                background-color: var(--color-white);
+            }
+
+            &.t-is-checked .t-checkbox__input {
+                border-color: var(--color-main);
+                background-color: var(--color-main);
+            }
+        }
+    }
+
+    .isAssessment {
+
+        .t-form__label {
+            display: block;
+            width: 100% !important;
+            text-align: left;
+        }
+
+        .t-form__controls {
+            margin-left: 15px !important;
+            display: block;
+
+            .t-form__controls-content {
+                display: block;
+            }
+        }
+
+        .t-radio {
+            width: 100%;
+        }
+    }
+    .t-card__body{
+        display: block;
+    }
+}
+
+.billDialog {
+    :deep(.detailsList) {
+        ul li {
+            line-height: 40px;
+
+        }
+    }
+
+    :deep(.t-dialog) {
+        width: 764px;
+        height: 650px;
+
+        .details {
+            display: flex;
+
+            label {
+                color: var(--color-bk4);
+                line-height: 54px;
+            }
+
+            ul li {
+                width: 25%;
+                text-align: left;
+                padding-left: 20px;
+            }
+
+            .table {
+                flex: 1;
+                height: 400px;
+                overflow-y: scroll;
+                padding-top: 60px;
+                padding-right: 15px;
+
+                tr {
+
+                    &:nth-child(5),
+                    &:nth-child(8) {
+                        td {
+                            border-bottom: 0px solid var(--color-border);
+                        }
+
+                    }
+
+                    &:nth-child(4),
+                    &:nth-child(7) {
+                        td {
+                            border-bottom: 1px solid var(--color-border);
+                        }
+
+                    }
+
+                    td {
+                        &:last-child {
+                            width: 25%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .t-dialog__body {
+        padding-right: 15px;
+    }
+}
+
+:deep(.emptyMan) {
+    width: 100%;
+    text-align: center;
+    padding: 60px;
+
+    img {
+        width: 10%;
+    }
+}
+
+// 账单
+:deep(.billBox) {
+    width: 100%;
+
+    .billInfo {
+        display: flex;
+        margin-left: -20px;
+        flex-wrap: wrap;
+        .bt{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .balanceVo{
+        .itemCon{
+            ul li{position: relative;}
+        }
+        
+    }
+    .unpaidVo{
+        ul{
+            position: relative;
+            .bt{
+                right: 20px;
+            }
+        }
+    }
+}
+
+:deep(.fillCon) {
+    box-shadow: 0 2px 12px 0 rgba(#939393, 0.20);
+    border-radius: 2px;
+    margin-bottom: 10px;
+    padding: 0 4px 20px 20px;
+    margin-left: 20px;
+    width: calc(50% - 20px);;
+
+    &.conBpd {
+        padding-bottom: 12px;
+    }
+
+    .titleInfo {
+        height: 49px;
+        line-height: 49px;
+        font-size: var(--font-size-16);
+        color: var(--color-bk1);
+        display: flex;
+        padding-right: 16px;
+
+        .lText {
+            flex: 1;
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .rText {
+            font-size: var(--font-size-14);
+            color: var(--color-bk2);
+
+            span {
+                padding-left: 16px;
+            }
+        }
+    }
+
+    .itemCon {
+        min-height: 105px;
+        max-height: 296px;
+        overflow-y: scroll;
+        padding-right: 12px;
+
+        &.conH {
+            max-height: 350px;
+        }
+
+        &::-webkit-scrollbar {
+            /* 对应纵向滚动条的宽度 */
+            width: 4px;
+            /* 对应横向滚动条的宽度 */
+            height: 4px;
+        }
+
+        /* 滚动条轨道 */
+        &::-webkit-scrollbar-track {
+            background: #fff;
+        }
+
+        ul {
+            background: #F6FBFA;
+            border-radius: 2px;
+            padding: 15px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &.bg {
+                background: #FCFBF6;
+            }
+
+            li {
+                line-height: 22px;
+                padding: 5px 0;
+                width: 50%;
+                color: var(--color-bk2);
+                display: flex;
+
+                &.fist {
+                    padding-bottom: 17px;
+                }
+
+                label {
+                    color: var(--color-bk4);
+                    padding-right: 10px;
+                    vertical-align: top;
+                }
+
+
+                .lText {
+                    flex: 1;
+
+                    .bt-small {
+                        display: inline-block;
+                        margin-left: 10px;
+                        font-size: var(--font-size-11);
+                    }
+                }
+
+
+
+                .t-textarea {
+                    display: inline-block;
+                    width: calc(100% - 80px);
+                }
+
+                .t-input-number .t-input-number__decrease,
+                .t-input-number .t-input-number__increase {
+                    background: var(--color-white);
+                }
+
+                .t-is-disabled {
+
+                    .t-input-number__decrease,
+                    .t-input-number__increase {
+                        background: #eee;
+
+                        &:hover {
+
+                            .t-icon {
+                                color: rgb(154, 154, 154);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .t-is-disabled {
+        .t-textarea__limit {
+            background: #eee;
+        }
+    }
+
+    .total {
+        width: 100%;
+    }
+}
+:deep(.total) {
+    width: 100%;
+    padding: 10px 0 0;
+    display: flex;
+    align-items: center;
+
+    .text {
+        padding-right: 32px;
+    }
+
+    .bt {
+        padding: 0 10px;
+    }
+}
